@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:enabled="false"
+        android:id="@+id/addSt"
+        android:title="Add strat">
+        <menu>
+
+            <item
+                android:id="@+id/addatkstrt"
+                android:title="Add atk strat" />
+            <item
+                android:id="@+id/adddefstrt"
+                android:title="Add def strat" />
+            <item
+                android:id="@+id/addteamaskstrt"
+                android:title="Add team atk strat" />
+            <item
+                android:id="@+id/addteamdefstrt"
+                android:title="Add team def strat" />
+
+        </menu>
+    </item>
+
+    <item
+        android:enabled="false"
+        android:id="@+id/RemveSt"
+        android:title="Remove strat">
+        <menu>
+            <item
+                android:id="@+id/rematkstrt"
+                android:title="Remove atk strat" />
+            <item
+                android:id="@+id/remdefstrt"
+                android:title="Remove def strat" />
+            <item
+                android:id="@+id/remteamaskstrt"
+                android:title="Remove team atk strat" />
+            <item
+                android:id="@+id/remteamdefstrt"
+                android:title="Remove team def strat" />
+
+        </menu>
+    </item>
+
+    <item
+
+
+        android:title="MiniGames">
+        <menu>
+            <item
+                android:id="@+id/Game1"
+                android:title="Drinking game" />
+            <item
+
+                android:title="Temp name" >
+                <menu
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <item
+                        android:id="@+id/Game2"
+                        android:title="Attacking" />
+                    <item
+                        android:id="@+id/Game3"
+                        android:title="Defending" />
+
+
+                </menu>
+            </item>
+
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/Codes"
+        android:title="Codes" />
+
+    <item
+        android:id="@+id/Rules"
+        android:title="Rules" />
+
+
+
+</menu>
