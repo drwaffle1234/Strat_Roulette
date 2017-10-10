@@ -83,18 +83,18 @@
         android:layout_below="@+id/team1"
         android:layout_centerHorizontal="true" />
 
-    <com.google.android.gms.ads.AdView
+    <com.google.android.gms.ads.doubleclick.PublisherAdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/adView"
-        android:layout_width="wrap_content"
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-9728962202433363/6420073668">
-    </com.google.android.gms.ads.AdView>
+        ads:adUnitId="/6253334/dfp_example_ad" />
 
-
+///6253334/dfp_example_ad
+///ca-app-pub-9728962202433363/6420073668
 
 
 </RelativeLayout>

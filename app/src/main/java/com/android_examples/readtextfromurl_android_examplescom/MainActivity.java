@@ -12,6 +12,9 @@ import android.widget.TextView;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.doubleclick.PublisherAdRequest;
+import com.google.android.gms.ads.doubleclick.PublisherAdView;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -19,7 +22,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
+    private PublisherAdView mAdView;
     static boolean debug=false;
     SaveInfo SI=new SaveInfo();
     MiniGames MG=new MiniGames();
@@ -52,6 +55,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         def.setOnClickListener(this);
         atkstrt.setOnClickListener(this);
         defstrt.setOnClickListener(this);
+
+        //ads stuff
+        mAdView = (PublisherAdView) findViewById(R.id.ad_view);
+        PublisherAdRequest adRequest = new PublisherAdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+
 
     }
 
